@@ -13,11 +13,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="324bd65b-9b67-4dfd-9c98-a1c4d45c5dd0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Test.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Test.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/ABP_Manny.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/Assets/ABP_Manny.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_f2_run.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_f2_run.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_idle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_idle.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Blueprints/BP_RPGCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/Blueprints/BP_RPGCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Blueprints/BP_RPGGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/Blueprints/BP_RPGGameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Test.umap" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1749841465355</updated>
       <workItem from="1749841468215" duration="3209000" />
-      <workItem from="1749851107869" duration="759000" />
+      <workItem from="1749851107869" duration="1400000" />
     </task>
     <servers />
   </component>
