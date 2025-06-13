@@ -13,11 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="324bd65b-9b67-4dfd-9c98-a1c4d45c5dd0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Content/Input/ThirdPerson/IMC_ThirdPerson.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/ThirdPerson/IMC_ThirdPerson.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Test.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Test.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/ABP_Manny.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/Assets/ABP_Manny.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_f2_run.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_f2_run.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_idle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_idle.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_light_04.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_light_04.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_med_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_med_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_med_02.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_med_02.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Blueprints/BP_RPGCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/Blueprints/BP_RPGCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Blueprints/BP_RPGGameMode.uasset" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1749841465355</updated>
       <workItem from="1749841468215" duration="3209000" />
-      <workItem from="1749851107869" duration="1400000" />
+      <workItem from="1749851107869" duration="2028000" />
     </task>
     <servers />
   </component>
