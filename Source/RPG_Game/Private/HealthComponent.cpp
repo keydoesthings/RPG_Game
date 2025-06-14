@@ -43,7 +43,10 @@ float UHealthComponent::ChangeHealth(float Health)
 float UHealthComponent::SetMaxHealth(float Health)
 {
 	MaxHealth = FMath::Max(0.f, Health);
-	CurrentHealth = FMath::Clamp(CurrentHealth, 0.f, MaxHealth);
+	if (CurrentHealth > MaxHealth)
+	{
+		SetMaxHealth(MaxHealth);
+	}
 
 	return MaxHealth;
 }
