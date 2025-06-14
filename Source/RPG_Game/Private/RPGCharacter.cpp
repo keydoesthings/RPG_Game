@@ -22,13 +22,24 @@ void ARPGCharacter::BeginPlay()
 void ARPGCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
-// Called to bind functionality to input
-void ARPGCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void ARPGCharacter::Move(const FVector2D& Input)
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	if (Controller && Input.SizeSquared() > 0.0f)
+	{
+		const FRotator YawRotation(0, Controller->GetControlRotation().Yaw, 0);
+		const FVector Forward = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+		const FVector Right = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 
+		AddMovementInput(Forward, Input.Y);
+		AddMovementInput(Right, Input.X);
+	}
+}
+
+void ARPGCharacter::Look(const FVector2D& Input)
+{
+	AddControllerYawInput(Input.X);
+	AddControllerPitchInput(Input.Y*-1);	
 }
 
