@@ -17,7 +17,6 @@
       <change beforePath="$PROJECT_DIR$/Content/Maps/Test.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Test.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/ABP_Manny.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/Assets/ABP_Manny.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/BP_RPGCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/BP_RPGCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RPG_Game/Public/ItemDataAsset.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG_Game/Public/ItemDataAsset.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +181,7 @@
       <updated>1749841465355</updated>
       <workItem from="1749841468215" duration="3209000" />
       <workItem from="1749851107869" duration="2110000" />
-      <workItem from="1749893981893" duration="12832000" />
+      <workItem from="1749893981893" duration="14571000" />
     </task>
     <servers />
   </component>
