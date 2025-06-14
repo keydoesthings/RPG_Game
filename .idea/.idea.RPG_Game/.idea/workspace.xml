@@ -13,8 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="324bd65b-9b67-4dfd-9c98-a1c4d45c5dd0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/BP_RPGCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RPGCharacter/BP_RPGCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/RPG_Game/Private/HealthComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG_Game/Private/HealthComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_HUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_HUD.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +178,7 @@
       <updated>1749841465355</updated>
       <workItem from="1749841468215" duration="3209000" />
       <workItem from="1749851107869" duration="2110000" />
-      <workItem from="1749893981893" duration="14805000" />
+      <workItem from="1749893981893" duration="15400000" />
     </task>
     <servers />
   </component>
