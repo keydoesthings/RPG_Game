@@ -2,20 +2,36 @@
 
 
 #include "RPGCharacter.h"
+#include "Components/CapsuleComponent.h"
 
 // Sets default values
 ARPGCharacter::ARPGCharacter()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+ 	// Set this character to call Tick() every frame.
 	PrimaryActorTick.bCanEverTick = true;
 
+	// Create components
+	Health = CreateDefaultSubobject<UHealthComponent>(FName("Health"));
+	Inventory = CreateDefaultSubobject<UInventoryComponent>(FName("Inventory"));
+
+	// Setup capsule collision for overlaps
+	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	GetCapsuleComponent()->SetCollisionObjectType(ECC_Pawn);
+	GetCapsuleComponent()->SetGenerateOverlapEvents(true);
+	GetCapsuleComponent()->SetCollisionResponseToAllChannels(ECR_Block);
+	// Make sure capsule overlaps pickups which are typically WorldDynamic or custom channel
+	GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_GameTraceChannel1, ECR_Overlap);
+	// Optional: ignore other pawns to avoid blocking
+	GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_Pawn, ECR_Ignore);
+
+	// Bind overlap event for debugging
+	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &ARPGCharacter::OnCapsuleBeginOverlap);
 }
 
 // Called when the game starts or when spawned
 void ARPGCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
@@ -40,6 +56,17 @@ void ARPGCharacter::Move(const FVector2D& Input)
 void ARPGCharacter::Look(const FVector2D& Input)
 {
 	AddControllerYawInput(Input.X);
-	AddControllerPitchInput(Input.Y*-1);	
+	AddControllerPitchInput(Input.Y * -1);
+}
+
+// Overlap handler for capsule component
+void ARPGCharacter::OnCapsuleBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+                                          UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
+                                          bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor && OtherActor != this)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Character overlapped with: %s"), *OtherActor->GetName());
+	}
 }
 

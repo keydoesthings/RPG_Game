@@ -13,7 +13,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="324bd65b-9b67-4dfd-9c98-a1c4d45c5dd0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_HUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_HUD.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG_Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG_Game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_ThirdPersonGameMode.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/FreeAnimationLibrary/Animations/Climbing_Animations/Climbing/anim_Climbing_Down_Right.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/FreeAnimationLibrary/Animations/Climbing_Animations/Climbing/anim_Climbing_Up_Left.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/DA_Apple.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/MainMenu.umap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Test.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Test.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/BP_ThirdPersonGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_ThirdPersonGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/ABP_Manny.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_heavy_idle.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_heavy_release.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_heavy_startup.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_light_01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_light_02.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_light_03.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_light_04.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_med_01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_attack_med_02.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_block_idle.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_block_react.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_f2_run.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_idle.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/anim_special.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/AnimMontages/attack_montage.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Materials/Functions/CA_Mannequin.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Materials/Functions/ChromaticCurve.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Materials/Functions/MF_Diffraction.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Materials/Functions/MF_logo3layers.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Materials/Functions/ML_BaseColorFallOff.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Materials/Instances/Manny/MI_Manny_01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Materials/Instances/Manny/MI_Manny_02.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Materials/M_Mannequin.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Meshes/Mannequin_LODSettings.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Meshes/SKM_Manny_Simple.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Meshes/SK_Mannequin.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_01_ASAOPMASK_MSK.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_01_BN.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_01_CCRCCPlastic_MSK.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_01_D.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_01_MSR_MSK.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_01_N.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_01_Tan.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_02_ASAOPMASK_MSK.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_02_BN.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_02_CCRCCPlastic_MSK.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_02_D.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_02_MSR_MSK.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_02_N.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Manny/T_Manny_02_Tan.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/Assets/Character/Textures/Shared/T_UE_Logo_M.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RPGCharacter/BP_RPGCharacter.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/MainMenu/WBP_MainMenu.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_HUD.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_InventoryText.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_MainMenu.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RPG_Game/Private/InventoryComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG_Game/Private/InventoryComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RPG_Game/Private/RPGCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG_Game/Private/RPGCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RPG_Game/Public/InventoryComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG_Game/Public/InventoryComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RPG_Game/Public/RPGCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG_Game/Public/RPGCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +87,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Private/InventoryComponent.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Private/PickupItem.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Private/RPGPlayerController.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Public/HealthComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Public/InventoryComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Public/PickupItem.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Public/RPGPlayerController.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -42,24 +103,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ Project.RPG_Game.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "SolutionBuilderGeneralOptionsPage",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ Project.RPG_Game.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;SolutionBuilderGeneralOptionsPage&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C/C++ Project.RPG_Game">
     <configuration name="RPG_Game" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
@@ -178,7 +239,9 @@
       <updated>1749841465355</updated>
       <workItem from="1749841468215" duration="3209000" />
       <workItem from="1749851107869" duration="2110000" />
-      <workItem from="1749893981893" duration="15400000" />
+      <workItem from="1749893981893" duration="15416000" />
+      <workItem from="1749994296289" duration="9644000" />
+      <workItem from="1750069922071" duration="2384000" />
     </task>
     <servers />
   </component>
@@ -186,6 +249,11 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="dotnet:OpenTelemetry.Api" />
+    <option featureType="dependencySupport" implementationName="dotnet:OpenTelemetry" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.ApplicationInsights" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
