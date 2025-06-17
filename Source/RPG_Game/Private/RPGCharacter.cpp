@@ -13,6 +13,7 @@ ARPGCharacter::ARPGCharacter()
 	// Create components
 	Health = CreateDefaultSubobject<UHealthComponent>(FName("Health"));
 	Inventory = CreateDefaultSubobject<UInventoryComponent>(FName("Inventory"));
+	Attack = CreateDefaultSubobject<UAttackComponent>(FName("Attack"));
 
 	// Setup capsule collision for overlaps
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);

@@ -10,7 +10,23 @@ void UHealthComponent::BeginPlay()
 	}
 	SetMaxHealth(DefaultMaxHealth);
 	SetCurrentHealth(DefaultHealth);
+
+	if (AActor* Owner = GetOwner())
+	{
+		Owner->OnTakeAnyDamage.AddDynamic(this, &UHealthComponent::HandleTakeAnyDamage);
+	}
 }
+
+void UHealthComponent::HandleTakeAnyDamage(
+	AActor* DamagedActor,
+	float Damage,
+	const class UDamageType* DamageType,
+	class AController* InstigatedBy,
+	AActor* DamageCauser)
+{
+	ChangeHealth(-Damage);
+}
+
 
 float UHealthComponent::SetCurrentHealth(float Health)
 {

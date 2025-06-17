@@ -3,6 +3,7 @@
 #include "AttackComponent.h"
 #include "GameFramework/Actor.h"
 #include "Engine/World.h"
+#include "Kismet/GameplayStatics.h"
 #include "DrawDebugHelpers.h"
 
 bool UAttackComponent::Attack(FHitResult& OutHit)
@@ -37,6 +38,18 @@ bool UAttackComponent::Attack(FHitResult& OutHit)
 		DrawDebugBox(GetWorld(), End, BoxHalfSize, Rotation, BoxColor, bDebugPersistent, DebugDuration);
 		DrawDebugLine(GetWorld(), Start, End, BoxColor, bDebugPersistent, DebugDuration, 0, 2.0f);
 	}
-		
+
+	if (bHit && OutHit.GetActor())
+	{
+		// Apply damage to the hit actor
+		UGameplayStatics::ApplyDamage(
+			OutHit.GetActor(),
+			DamageAmount,
+			GetOwner()->GetInstigatorController(),
+			GetOwner(),
+			UDamageType::StaticClass()
+		);
+	}
+	
 	return bHit;
 }

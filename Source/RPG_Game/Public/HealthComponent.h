@@ -31,6 +31,14 @@ protected:
 	UPROPERTY(BlueprintReadOnly, Category="Health", VisibleAnywhere)
 	float MaxHealth;
 
+	UFUNCTION()
+	void HandleTakeAnyDamage(
+		AActor* DamagedActor,
+		float Damage,
+		const class UDamageType* DamageType,
+		class AController* InstigatedBy,
+		AActor* DamageCauser);
+	
 public:
 	
 	UFUNCTION(BlueprintCallable, Category="Health")

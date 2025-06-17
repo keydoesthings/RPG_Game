@@ -10,7 +10,11 @@ TArray<UItemDataAsset*> UInventoryComponent::GetItems()
 
 UItemDataAsset* UInventoryComponent::GetItem(int32 Index)
 {
-	return Items[Index];
+	if (Items.IsValidIndex(Index))
+	{
+		return Items[Index];
+	}
+	return nullptr;
 }
 
 int32 UInventoryComponent::AddItem(UItemDataAsset* Item)
@@ -20,5 +24,9 @@ int32 UInventoryComponent::AddItem(UItemDataAsset* Item)
 
 int32 UInventoryComponent::RemoveItem(int32 Index)
 {
-	return Items.Remove(Items[Index]);
+	if (Items.IsValidIndex(Index))
+	{
+		return Items.Remove(Items[Index]);
+	}
+	return 0;
 }

@@ -15,6 +15,9 @@ class RPG_GAME_API UAttackComponent : public UActorComponent
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attack")
+	float DamageAmount = 1.f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attack")
 	FVector BoxOffset = FVector(50.f, 0.f, 0.f);
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attack")
@@ -24,7 +27,7 @@ public:
 	TEnumAsByte<ECollisionChannel> CollisionChannel = ECC_Visibility;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attack")
-	float TraceLength = 200.f;
+	float TraceLength = 0.f;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attack")
 	bool bDebug = false;

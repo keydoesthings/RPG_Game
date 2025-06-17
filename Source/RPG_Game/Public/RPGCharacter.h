@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "HealthComponent.h"
 #include "InventoryComponent.h"
+#include "AttackComponent.h"
 #include "RPGCharacter.generated.h"
 
 UCLASS()
@@ -21,11 +22,14 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	UHealthComponent* Health;
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	UInventoryComponent* Inventory;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	UAttackComponent* Attack;
 	
 public:	
 	// Called every frame
