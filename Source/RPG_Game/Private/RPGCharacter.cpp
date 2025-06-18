@@ -24,9 +24,6 @@ ARPGCharacter::ARPGCharacter()
 	GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_GameTraceChannel1, ECR_Overlap);
 	// Optional: ignore other pawns to avoid blocking
 	GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_Pawn, ECR_Ignore);
-
-	// Bind overlap event for debugging
-	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &ARPGCharacter::OnCapsuleBeginOverlap);
 }
 
 // Called when the game starts or when spawned
@@ -59,15 +56,3 @@ void ARPGCharacter::Look(const FVector2D& Input)
 	AddControllerYawInput(Input.X);
 	AddControllerPitchInput(Input.Y * -1);
 }
-
-// Overlap handler for capsule component
-void ARPGCharacter::OnCapsuleBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
-                                          UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
-                                          bool bFromSweep, const FHitResult& SweepResult)
-{
-	if (OtherActor && OtherActor != this)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Character overlapped with: %s"), *OtherActor->GetName());
-	}
-}
-

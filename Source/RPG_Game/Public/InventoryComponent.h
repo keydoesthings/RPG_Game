@@ -7,6 +7,8 @@
 #include "ItemDataAsset.h"
 #include "InventoryComponent.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnInventoryUpdated);
+
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class RPG_GAME_API UInventoryComponent : public UActorComponent
 {
@@ -17,6 +19,9 @@ protected:
 	TArray<TObjectPtr<UItemDataAsset>> Items;
 
 public:
+	UPROPERTY(BlueprintAssignable, Category = "Inventory")
+	FOnInventoryUpdated OnInventoryUpdated;
+	
 	UFUNCTION()
 	TArray<UItemDataAsset*> GetItems();
 

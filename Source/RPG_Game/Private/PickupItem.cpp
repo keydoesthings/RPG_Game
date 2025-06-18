@@ -2,54 +2,69 @@
 
 
 #include "PickupItem.h"
+#include "Components/SphereComponent.h"
+#include "Components/StaticMeshComponent.h"
+#include "GameFramework/Actor.h"
+#include "RPGCharacter.h" // Replace with your actual character class
 
-// Sets default values
 APickupItem::APickupItem()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
-	Root = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
-	RootComponent = Root;
+	// Collision
+	CollisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("CollisionComponent"));
+	CollisionComponent->InitSphereRadius(50.f);
+	CollisionComponent->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	CollisionComponent->SetCollisionObjectType(ECC_WorldDynamic);
+	CollisionComponent->SetCollisionResponseToAllChannels(ECR_Ignore);
+	CollisionComponent->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
+	CollisionComponent->SetGenerateOverlapEvents(true);
 
-	Sphere = CreateDefaultSubobject<USphereComponent>(TEXT("Sphere"));
-	Sphere->SetupAttachment(Root);
+	RootComponent = CollisionComponent;
 
-	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
-	Mesh->SetupAttachment(Root);
+	// Bind overlap event
+	CollisionComponent->OnComponentBeginOverlap.AddDynamic(this, &APickupItem::OnOverlapBegin);
 
-	Sphere->SetSphereRadius(100);
-	Sphere->SetGenerateOverlapEvents(true);
-	Sphere->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-	Sphere->SetCollisionObjectType(ECC_WorldDynamic); // or ECC_GameTraceChannel1 if custom
-	Sphere->SetCollisionResponseToAllChannels(ECR_Ignore);
-	Sphere->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
-
-	Sphere->OnComponentBeginOverlap.AddDynamic(this, &APickupItem::OnBeginOverlap);
+	// Mesh
+	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent"));
+	MeshComponent->SetupAttachment(RootComponent);
+	MeshComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 }
 
-void APickupItem::OnBeginOverlap(UPrimitiveComponent* OverlappedComp,
+void APickupItem::BeginPlay()
+{
+	Super::BeginPlay();
+}
+
+void APickupItem::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	AddActorLocalRotation(FRotator(0.f, 60.f * DeltaTime, 0.f));
+}
+
+void APickupItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComp,
 								 AActor* OtherActor,
 								 UPrimitiveComponent* OtherComp,
 								 int32 OtherBodyIndex,
 								 bool bFromSweep,
 								 const FHitResult& SweepResult)
 {
-	UE_LOG(LogTemp, Display, TEXT("PickupItem::OnBeginOverlap"));
-	if (ARPGCharacter* Char = Cast<ARPGCharacter>(OtherActor))
+	if (OtherActor && OtherActor != this)
 	{
-		UE_LOG(LogTemp, Display, TEXT("cast successful"));
-		if (UInventoryComponent* Inventory = Char->FindComponentByClass<UInventoryComponent>())
+		// Example: Check if it's your player
+		ARPGCharacter* Player = Cast<ARPGCharacter>(OtherActor);
+		if (Player)
 		{
-			UE_LOG(LogTemp, Display, TEXT("inventory component found"));
-			if (Char->GetController() && Char->GetController()->IsPlayerController())
-			{
-			
-			}
-			Inventory->AddItem(ItemDataAsset);
-			UE_LOG(LogTemp, Log, TEXT("Picked up item: %s by %s"), *ItemDataAsset->GetName(), *GetOwner()->GetName());
+			UE_LOG(LogTemp, Log, TEXT("Item picked up!"));
+			UInventoryComponent* PlayerInventory = Player->FindComponentByClass<UInventoryComponent>();
+			PlayerInventory->AddItem(Item);
 			Destroy();
 		}
 	}
 }
 
-
+void APickupItem::OnPickedUp()
+{
+	UE_LOG(LogTemp, Log, TEXT("Item picked up!"));
+	
+}

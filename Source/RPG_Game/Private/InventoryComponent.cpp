@@ -19,14 +19,18 @@ UItemDataAsset* UInventoryComponent::GetItem(int32 Index)
 
 int32 UInventoryComponent::AddItem(UItemDataAsset* Item)
 {
-	return Items.Add(Item);
+	int32 AddIndex = Items.Add(Item);
+	OnInventoryUpdated.Broadcast();
+	return AddIndex;
 }
 
 int32 UInventoryComponent::RemoveItem(int32 Index)
 {
 	if (Items.IsValidIndex(Index))
 	{
-		return Items.Remove(Items[Index]);
+		int32 RemoveIndex = Items.Remove(Items[Index]);
+		OnInventoryUpdated.Broadcast();
+		return RemoveIndex;
 	}
 	return 0;
 }

@@ -4,45 +4,46 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Components/SphereComponent.h"
-#include "Components/MeshComponent.h"
-#include "RPGCharacter.h"
-#include "ItemDataAsset.h"
 #include "PickupItem.generated.h"
 
+// Forward declarations
+class USphereComponent;
+class UStaticMeshComponent;
+class UItemDataAsset;
 
 UCLASS()
 class RPG_GAME_API APickupItem : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
+    
+public:
 	APickupItem();
 
 protected:
+	virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PickupItem")
-	UItemDataAsset* ItemDataAsset;
-	
-	UPROPERTY(VisibleAnywhere)
-	USceneComponent* Root;	
-	
-	UPROPERTY(VisibleAnywhere)
-	USphereComponent* Sphere;
-
-	UPROPERTY(VisibleAnywhere)
-	UMeshComponent* Mesh;
-
-	UPROPERTY()
-	ARPGCharacter* OverlappingCharacter;
+public:
+	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION()
-	void OnBeginOverlap(UPrimitiveComponent* OverlappedComp,
+	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp,
 						AActor* OtherActor,
 						UPrimitiveComponent* OtherComp,
 						int32 OtherBodyIndex,
 						bool bFromSweep,
 						const FHitResult& SweepResult);
 
+	// Components
+	UPROPERTY(VisibleAnywhere)
+	USphereComponent* CollisionComponent;
+
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent* MeshComponent;
+
+	// Item reference
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickup")
+	UItemDataAsset* Item;
+	
+	// Pickup behavior
+	void OnPickedUp();
 };

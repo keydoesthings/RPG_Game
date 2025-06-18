@@ -20,10 +20,10 @@ protected:
 	virtual void BeginPlay() override;
 	
 	UPROPERTY(BlueprintReadWrite, Category="Health", EditAnywhere)
-	float DefaultHealth;
+	float DefaultHealth = 10.f;
 
 	UPROPERTY(BlueprintReadWrite, Category="Health", EditAnywhere)
-	float DefaultMaxHealth;
+	float DefaultMaxHealth = 10.f;
 	
 	UPROPERTY(BlueprintReadOnly, Category="Health", VisibleAnywhere)
 	float CurrentHealth;

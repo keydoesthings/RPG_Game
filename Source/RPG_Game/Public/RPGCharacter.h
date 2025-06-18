@@ -37,9 +37,4 @@ public:
 	
 	void Move(const FVector2D& Input);
 	void Look(const FVector2D& Input);
-
-	UFUNCTION()
-	void OnCapsuleBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
-							   UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
-							   bool bFromSweep, const FHitResult& SweepResult);
 };
