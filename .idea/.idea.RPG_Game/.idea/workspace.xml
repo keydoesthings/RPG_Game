@@ -14,10 +14,8 @@
   <component name="ChangeListManager">
     <list default="true" id="324bd65b-9b67-4dfd-9c98-a1c4d45c5dd0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG_Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG_Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/BP_RPGCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/BP_RPGCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Test.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Test.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/BP_RPGPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_RPGPlayerController.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG_Game.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_Game.uproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RPG_Game/Private/RPGCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG_Game/Private/RPGCharacter.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +33,13 @@
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Private/AttackComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Private/InventoryComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Private/PickupItem.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Private/RPGAIController.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Private/RPGPlayerController.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Public/AttackComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Public/HealthComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Public/InventoryComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Public/PickupItem.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Public/RPGAIController.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/RPG_Game/Public/RPGPlayerController.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -193,7 +193,9 @@
       <workItem from="1750069922071" duration="2384000" />
       <workItem from="1750110179668" duration="4611000" />
       <workItem from="1750156828120" duration="6297000" />
-      <workItem from="1750175305866" duration="7947000" />
+      <workItem from="1750175305866" duration="8542000" />
+      <workItem from="1750270909792" duration="1815000" />
+      <workItem from="1750324837567" duration="2829000" />
     </task>
     <servers />
   </component>
