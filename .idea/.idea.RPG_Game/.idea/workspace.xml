@@ -14,9 +14,11 @@
   <component name="ChangeListManager">
     <list default="true" id="324bd65b-9b67-4dfd-9c98-a1c4d45c5dd0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RPG_Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RPG_Game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/BP_RPGCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/BP_RPGCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Test.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Test.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPG_Game.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_Game.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RPG_Game/Private/RPGAIController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG_Game/Private/RPGAIController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/RPG_Game/Private/RPGCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG_Game/Private/RPGCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/RPG_Game/Public/RPGAIController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/RPG_Game/Public/RPGAIController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,6 +198,7 @@
       <workItem from="1750175305866" duration="8542000" />
       <workItem from="1750270909792" duration="1815000" />
       <workItem from="1750324837567" duration="2829000" />
+      <workItem from="1750350740251" duration="879000" />
     </task>
     <servers />
   </component>

@@ -18,9 +18,6 @@ ARPGCharacter::ARPGCharacter()
 	GetCapsuleComponent()->SetGenerateOverlapEvents(true);
 	GetCapsuleComponent()->SetCollisionResponseToAllChannels(ECR_Block);
 	GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_GameTraceChannel1, ECR_Overlap);
-	
-	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
-    AIControllerClass = ARPGAIController::StaticClass();
 }
 
 // Called when the game starts or when spawned
